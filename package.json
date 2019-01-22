@@ -1,0 +1,19 @@
+{
+  "name": "alowebcomponent",
+  "version": "0.0.1",
+  "description": "This project is only for tests ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "http-server"
+  },
+  "keywords": [
+    "webcomponents",
+    "tests"
+  ],
+  "author": "Álvaro Quirós<alvaro.quiros@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}
