@@ -1,6 +1,17 @@
 class AloWebComponent extends HTMLElement {
+  static get template() {
+    const template = document.createElement('template');
+    template.innerHTML = `
+      This is the component initial content!
+    `;
+    return template;
+  }
+
   connectedCallback() {
-    this.attachShadow({ mode: "open" });
+    this.attachShadow({ mode: 'open' });
+    this.shadowRoot.appendChild(
+      AloWebComponent.template.content.cloneNode(true)
+    );
     this.text = this.getAttribute('text');
     this.render();
   }
